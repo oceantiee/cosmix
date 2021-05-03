@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COSMIX - Блог</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo header__logo" href="index.html">
+          <img class="logo__img" src="images/logo.svg" alt="logo">
+        </a>
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="shop.html">Каталог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="blog.html">Блог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="about.html">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <button type="button" class="menu__btn"><span></span></button>
+        </nav>
+
+        <div class="user-nav header__nav">
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__icon">
+              <use xlink:href="images/sprite.svg#heart"></use>
+            </svg>
+            <span class="user-nav__num">4</span>
+          </a>
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__icon">
+              <use xlink:href="images/sprite.svg#cart"></use>
+            </svg>
+            <span class="user-nav__num">1</span>
+          </a>
+          <a class="user-nav__link" href="login.html">
+            <svg class="user-nav__icon">
+              <use xlink:href="images/sprite.svg#user"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="blog-page blog-one">
+      <div class="container">
+
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="blog.html">Блог</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="blog-one.html">Самые интересные бьюти-события недели</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="blog-page__inner">
+
+          <div class="blog-page__aside filter">
+
+            <div class="filter__item filter-search">
+              <h3 class="filter__title">Поиск</h3>
+              <form class="filter-search__form" action="#">
+                <input class="filter-search__input" type="text" placeholder="Найти">
+                <button class="filter-search__btn" type="submit">
+                  <svg class="filter-search__icon">
+                    <use xlink:href="images/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+
+            <div class="recent-post">
+              <span class="recent-post__head">Интересные записи</span>
+              <a class="recent-post__card" href="blog-one.html">
+                <img class="recent-post__img" src="images/blog/blog1.jpg" alt="">
+                <h2 class="recent-post__title">
+                  Самые интересные бьюти-события недели
+                </h2>
+              </a>
+
+              <a class="recent-post__card" href="blog-one.html">
+                <img class="recent-post__img" src="images/blog/blog2.jpg" alt="">
+                <h2 class="recent-post__title">
+                  Тушь для ресниц: топ проверенных вариантов
+                </h2>
+              </a>
+
+              <a class="recent-post__card" href="blog-one.html">
+                <img class="recent-post__img" src="images/blog/blog3.jpg" alt="">
+                <h2 class="recent-post__title">
+                  Топ парфюмерии на весну
+                </h2>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="blog-one__content">
+            <article class="blog-one__article">
+              <h2 class="blog-one__title">Самые интересные бьюти-события недели</h2>
+              <img class="blog-one__main-image" src="images/blog/blog1.jpg" alt="Заглавное фото">
+              <h3>
+                Новый аромат Bombshell Oud от Victoria’s Secret
+              </h3>
+              <img class="blog-one__image" src="images/blog/blog-one1.jpg" alt="Парфюм">
+              <p>
+                Во всех магазинах Victoria’s Secret запускается новый аромат Bombshell Oud. Экзотический, глубокий и
+                пьянящий, он обволакивает кожу неосязаемой вуалью и усиливает ощущение тайны, которую сразу хочется
+                познать.
+              </p>
+              <p>
+                В сердце композиции – смелые ноты темных лепестков бархатного пиона, которые раскрываются в окружении
+                двух аккордов: сладостно-терпкого шафрана и древесно-землистого уда. Bombshell Oud – это союз томности и
+                сдержанности в одном флаконе.
+              </p>
+
+              <h3>
+                Уход за кожей нового поколения от NovAge
+              </h3>
+              <img class="blog-one__image" src="images/blog/blog-one2.jpg" alt="Средство для кожи">
+              <p>
+                Oriflame выпустил новую линейку NovAge Proceuticals для всех возрастов и типов кожи. В ее состав вошли
+                четыре сыворотки: с витамином С уменьшает видимость пигментных пятен и делает кожу более сияющей;
+                сыворотка-концентрат антивозрастного действия с ретинолом стимулирует обновление кожи;
+                сыворотка-концентрат для повышения упругости кожи с пептидами укрепляет и подтягивает кожу;
+                сыворотка-пилинг для обновления кожи с 6% содержанием AHA-кислот отшелушивает верхний слой кожи для
+                свежего и сияющего цвета лица. Также в новой линейке представлена обновляющая маска для лица из
+                биоцеллюлозы с ниацинамидом и экстрактом центеллы, которая помогает коже выглядеть здоровой, напитанной
+                и обновлённой.
+              </p>
+            </article>
+
+            <div class="blog-one__box">              
+
+              <div class="blog-one__info blog-info">
+                <a class="blog-info__author" href="#">Милена В.</a>
+                <span class="blog-info__date">06 Апреля 2021</span>
+              </div>
+
+              <div class="blog-one__share">
+                <span class="blog-one__descr">Поделиться:</span>
+                <ul class="product-one__networks networks">
+                  <li class="networks__item">
+                    <a class="networks__link" href="#">
+                      <svg class="networks__icon">
+                        <use xlink:href="images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks__item">
+                    <a class="networks__link" href="#">
+                      <svg class="networks__icon">
+                        <use xlink:href="images/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks__item">
+                    <a class="networks__link" href="#">
+                      <svg class="networks__icon">
+                        <use xlink:href="images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="comments">
+              <div class="comment">
+                <div class="comment__top">
+                  <span class="comment__author">Аноним</span>
+                  <span class="comment__date">11.04.2021</span>
+                </div>
+                <p class="comment__text">
+                  Супер, всегда радует что-то новенькое
+                </p>
+              </div>
+
+              <div class="comment">
+                <div class="comment__top">
+                  <span class="comment__author">Даша</span>
+                  <span class="comment__date">09.04.2021</span>
+                </div>
+                <p class="comment__text">
+                  Уже купила такие духи, очень довольна, всем рекомендую
+                </p>
+              </div>
+
+              <form class="comment-form" action="#">
+                <span class="comment-form__title">Оставить свой комментарий</span>
+
+                <div class="comment-form__inputs">
+                  <input class="comment-form__input" type="text" placeholder="Имя">
+                  <input class="comment-form__input" type="text" placeholder="Email">
+                </div>
+                <textarea class="comment-form__textarea" placeholder="Комментарий"></textarea>
+
+                <button class="comment-form__btn" type="submit">Отправить</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <address class="footer-top__column footer-top__column--main">
+          <a class="logo footer-top__logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+          <span class="footer-top__link">Москва, Серебрянический пер., 9</span>
+          <a class="footer-top__link" href="mailto:Youremail@gmail.com">
+            mail@cosmix.ru
+          </a>
+          <a class="footer-top__link" href="tel:74991130422">
+            +74991130422
+          </a>
+
+          <ul class="footer-top__networks networks">
+            <li class="networks__item">
+              <a class="networks__link" href="#">
+                <svg class="networks__icon">
+                  <use xlink:href="images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="networks__item">
+              <a class="networks__link" href="#">
+                <svg class="networks__icon">
+                  <use xlink:href="images/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="networks__item">
+              <a class="networks__link" href="#">
+                <svg class="networks__icon">
+                  <use xlink:href="images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+
+        <div class="footer-top__column">
+          <h6 class="footer-top__title">Покупателю</h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">О магазине</a>
+              <a class="footer-top__link" href="#">Контакты</a>
+              <a class="footer-top__link" href="#">Оплата</a>
+              <a class="footer-top__link" href="#">Доставка</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__column">
+          <h6 class="footer-top__title">Аккаунт</h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Мой аккаунт</a>
+              <a class="footer-top__link" href="#">Моя корзина</a>
+              <a class="footer-top__link" href="#">Избранное</a>
+              <a class="footer-top__link" href="#">Регистрация</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__column footer-top__column--sub">
+          <h6 class="footer-top__title">Подпишись на рассылку</h6>
+          <p class="footer-top__text">
+            Будь в курсе последних новинок и акций
+          </p>
+          <form class="footer-top__form" action="#">
+            <input class="footer-top__input" type="email" placeholder="Email" required>
+            <button class="footer-top__btn" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy">© 2021 cosmix.ru. Все права защищены.</p>
+        <div class="footer-bottom__accept">
+          Мы принимаем
+          <img class="footer-bottom__img" src="images/pay/mastercard.png" alt="мы принимаем mastercard">
+          <img class="footer-bottom__img" src="images/pay/visa.png" alt="мы принимаем visa">
+          <img class="footer-bottom__img" src="images/pay/paypal.png" alt="мы принимаем paypal">
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

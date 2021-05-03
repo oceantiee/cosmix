@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COSMIX - Страница товара</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo header__logo" href="index.html">
+          <img class="logo__img" src="images/logo.svg" alt="logo">
+        </a>
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="shop.html">Каталог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="blog.html">Блог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="about.html">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <button type="button" class="menu__btn"><span></span></button>
+        </nav>
+
+        <div class="user-nav header__nav">
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__icon">
+              <use xlink:href="images/sprite.svg#heart"></use>
+            </svg>
+            <span class="user-nav__num">4</span>
+          </a>
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__icon">
+              <use xlink:href="images/sprite.svg#cart"></use>
+            </svg>
+            <span class="user-nav__num">1</span>
+          </a>
+          <a class="user-nav__link" href="login.html">
+            <svg class="user-nav__icon">
+              <use xlink:href="images/sprite.svg#user"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="product-page">
+      <div class="container">
+
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="shop.html">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="product.html">Палетка теней для век и румян BUXOM WHITE RUSSIAN</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="product-page__inner">
+          <div class="product-page__slider">
+            <img class="product-page__image" src="images/products/s6.webp" alt="Палетка">
+            <img class="product-page__image" src="images/products/s6.webp" alt="Палетка">
+            <img class="product-page__image" src="images/products/s6.webp" alt="Палетка">
+          </div>
+
+          <div class="product-page__content">
+            <h2 class="product-page__title">Палетка теней для век и румян BUXOM WHITE RUSSIAN</h2>
+            <div class="product-page__rate">
+              <div class="product-page__star star" data-rateyo-rating="4"></div>
+              <span class="product-page__num">(2)</span>
+            </div>
+
+            <ul class="product-page__info">
+              <li class="product-page__row">
+                <span class="product-page__descr">Цена:</span>
+                <span class="product-page__sum">3200 ₽</span>
+              </li>
+
+              <li class="product-page__row">
+                <span class="product-page__descr">Старая цена:</span>
+                <span class="product-page__sum product-page__sum--old">3999 ₽</span>
+              </li>
+
+              <li class="product-page__row">
+                <span class="product-page__descr">Номер</span>
+                <span class="product-page__text">BXM9211BX</span>
+              </li>
+
+              <li class="product-page__row">
+                <span class="product-page__descr">Категория</span>
+                <a class="product-page__link" href="#">Макияж</a>
+              </li>
+
+              <li class="product-page__row">
+                <span class="product-page__descr">Поделиться</span>
+                <ul class="product-page__item networks">
+                  <li class="networks__item">
+                    <a class="networks__link" href="#">
+                      <svg class="networks__icon">
+                        <use xlink:href="images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks__item">
+                    <a class="networks__link" href="#">
+                      <svg class="networks__icon">
+                        <use xlink:href="images/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks__item">
+                    <a class="networks__link" href="#">
+                      <svg class="networks__icon">
+                        <use xlink:href="images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+
+              </li>
+            </ul>
+
+            <form class="product-page__form" action="#">
+              <input class="product-page__num" type="number" value="1" min="1">
+              <button class="product-page__btn" type="submit">В корзину</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="product-tabs">
+          <div class="product-tabs__head">
+            <a class="product-tabs__name product-tabs__name--active" href="#tab-1">Описание</a>
+            <a class="product-tabs__name" href="#tab-2">Применение</a>
+            <a class="product-tabs__name" href="#tab-3">Отзывы</a>
+          </div>
+
+          <div class="product-tabs__content">
+            <div class="product-tabs__item product-tabs__item--active" id="tab-1">
+              <div class="product-tabs__descr">
+                <p>
+                  BUXOM посвящает лимитированную коллекцию одному из своих самых знаменитых оттенков, который перестал
+                  быть просто названием коктейля — WHITE RUSSIAN.
+                </p>
+                <p>
+                  В палетке теней для век и румян представлено два новых оттенка румян и шесть универсальных оттенков
+                  теней для век с матовым, атласным и мерцающим финишем для естественного дневного макияжа или
+                  драматичного «смоки айз».
+                </p>
+                <p>
+                  Cоздавай модные образы с помощью палетки white russian.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-tabs__item" id="tab-2">
+              <div class="product-tabs__descr">
+                <p>
+                  Наноси тени и румяна кистью. Оттенки можно использовать самостоятельно или сочетать в одном макияже.
+                </p>
+                <p>
+                  Используй разные оттенки и текстуры, регулируй интенсивность цвета и наслаждайся смелыми и яркими
+                  образами.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-tabs__item" id="tab-3">
+              <div class="comments">
+                <div class="comment">
+                  <div class="comment__top">
+                    <span class="comment__author">Диана К.</span>
+                    <span class="comment__date">15.03.2021</span>
+                    <div class="comment__star star" data-rateyo-rating="4.5"></div>
+                  </div>
+                  <p class="comment__text">
+                    По колористике палетка шикарная! Правда, коричневые оттенки рыжат, но мне норм) оттенки на все
+                    случаи
+                    жизни.
+                  </p>
+                </div>
+
+                <div class="comment">
+                  <div class="comment__top">
+                    <span class="comment__author">Полина</span>
+                    <span class="comment__date">12.01.2021</span>
+                    <div class="comment__star star" data-rateyo-rating="5"></div>
+                  </div>
+                  <p class="comment__text">
+                    палетка очень крутая, подарила на день рождение подруга. классная пигментация ставлю лайк
+                  </p>
+                </div>
+
+                <form class="comment-form" action="#">
+                  <span class="comment-form__title">Оставить свой отзыв</span>
+
+                  <div class="comment-form__inputs">
+                    <input class="comment-form__input" type="text" placeholder="Имя">
+                    <input class="comment-form__input" type="text" placeholder="Email">
+                  </div>
+                  <textarea class="comment-form__textarea" placeholder="Комментарий"></textarea>
+
+                  <div class="comment-form__rate">
+                    <span class="comment-form__descr">Ваша оценка:</span>
+                    <div class="comment-form__star" data-rateyo-rating="5"></div>
+                  </div>
+
+                  <button class="comment-form__btn" type="submit">Оставить отзыв</button>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <section class="related">
+      <div class="container">
+        <h2 class="title related__title">Рекомендуемые товары</h2>
+        <div class="related__items">
+
+          <div class="product-card product-card--sale">
+            <a class="product-card__link" href="#">
+              <img class="product-card__images" src="images/products/s1.webp" alt="product">
+            </a>
+
+            <div class="product-card__buttons">
+              <button class="product-card__btn" type="button">
+                <svg class="product-card__icon">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
+              </button>
+              <button class="product-card__btn" type="button">
+                <svg class="product-card__icon">
+                  <use xlink:href="images/sprite.svg#heart"></use>
+                </svg>
+              </button>
+            </div>
+
+            <a class="product-card__title-link" href="#">
+              <h3 class="product-card__title">Гель для лица очищающий YUMMMY Профитроли с ванильным кремом</h3>
+            </a>
+            <div class="product-card__star star" data-rateyo-rating="5"></div>
+            <div class="product-card__price">
+              <span class="product-card__sum">200 ₽</span>
+              <span class="product-card__sum product-card__sum--old">250 ₽</span>
+            </div>
+          </div>
+
+          <div class="product-card product-card--sale">
+            <a class="product-card__link" href="#">
+              <img class="product-card__images" src="images/products/s2.webp" alt="product">
+            </a>
+
+            <div class="product-card__buttons">
+              <button class="product-card__btn" type="button">
+                <svg class="product-card__icon">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
+              </button>
+              <button class="product-card__btn" type="button">
+                <svg class="product-card__icon">
+                  <use xlink:href="images/sprite.svg#heart"></use>
+                </svg>
+              </button>
+            </div>
+
+            <a class="product-card__title-link" href="#">
+              <h3 class="product-card__title">Матирующая компактная пудра CLARINS Ever Matte</h3>
+            </a>
+            <div class="product-card__star star" data-rateyo-rating="5"></div>
+            <div class="product-card__price">
+              <span class="product-card__sum">2800 ₽</span>
+              <span class="product-card__sum product-card__sum--old">3100 ₽</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <img class="product-card__images" src="images/products/3.webp" alt="product">
+            </a>
+
+            <div class="product-card__buttons">
+              <button class="product-card__btn" type="button">
+                <svg class="product-card__icon">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
+              </button>
+              <button class="product-card__btn" type="button">
+                <svg class="product-card__icon">
+                  <use xlink:href="images/sprite.svg#heart"></use>
+                </svg>
+              </button>
+            </div>
+
+            <a class="product-card__title-link" href="#">
+              <h3 class="product-card__title">Жидкие румяна NARS</h3>
+            </a>
+            <div class="product-card__star star" data-rateyo-rating="4"></div>
+            <div class="product-card__price">
+              <span class="product-card__sum">2399 ₽</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <img class="product-card__images" src="images/products/4.webp" alt="product">
+            </a>
+
+            <div class="product-card__buttons">
+              <button class="product-card__btn" type="button">
+                <svg class="product-card__icon">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
+              </button>
+              <button class="product-card__btn" type="button">
+                <svg class="product-card__icon">
+                  <use xlink:href="images/sprite.svg#heart"></use>
+                </svg>
+              </button>
+            </div>
+
+            <a class="product-card__title-link" href="#">
+              <h3 class="product-card__title">Средство для дневного ухода за кожей PAYOT My Payot Jour</h3>
+            </a>
+            <div class="product-card__star star" data-rateyo-rating="4"></div>
+            <div class="product-card__price">
+              <span class="product-card__sum">2150 ₽</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <address class="footer-top__column footer-top__column--main">
+            <a class="logo footer-top__logo" href="#">
+              <img class="logo__img" src="images/logo.svg" alt="logo">
+            </a>
+            <span class="footer-top__link">Москва, Серебрянический пер., 9</span>
+            <a class="footer-top__link" href="mailto:Youremail@gmail.com">
+              mail@cosmix.ru
+            </a>
+            <a class="footer-top__link" href="tel:74991130422">
+              +74991130422
+            </a>
+
+            <ul class="footer-top__networks networks">
+              <li class="networks__item">
+                <a class="networks__link" href="#">
+                  <svg class="networks__icon">
+                    <use xlink:href="images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="networks__item">
+                <a class="networks__link" href="#">
+                  <svg class="networks__icon">
+                    <use xlink:href="images/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="networks__item">
+                <a class="networks__link" href="#">
+                  <svg class="networks__icon">
+                    <use xlink:href="images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+
+          <div class="footer-top__column">
+            <h6 class="footer-top__title">Покупателю</h6>
+            <ul class="footer-top__list">
+              <li class="footer-top__item">
+                <a class="footer-top__link" href="#">О магазине</a>
+                <a class="footer-top__link" href="#">Контакты</a>
+                <a class="footer-top__link" href="#">Оплата</a>
+                <a class="footer-top__link" href="#">Доставка</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-top__column">
+            <h6 class="footer-top__title">Аккаунт</h6>
+            <ul class="footer-top__list">
+              <li class="footer-top__item">
+                <a class="footer-top__link" href="#">Мой аккаунт</a>
+                <a class="footer-top__link" href="#">Моя корзина</a>
+                <a class="footer-top__link" href="#">Избранное</a>
+                <a class="footer-top__link" href="#">Регистрация</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-top__column footer-top__column--sub">
+            <h6 class="footer-top__title">Подпишись на рассылку</h6>
+            <p class="footer-top__text">
+              Будь в курсе последних новинок и акций
+            </p>
+            <form class="footer-top__form" action="#">
+              <input class="footer-top__input" type="email" placeholder="Email" required>
+              <button class="footer-top__btn" type="submit">Подписаться</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-bottom__copy">© 2021 cosmix.ru. Все права защищены.</p>
+          <div class="footer-bottom__accept">
+            Мы принимаем
+            <img class="footer-bottom__img" src="images/pay/mastercard.png" alt="мы принимаем mastercard">
+            <img class="footer-bottom__img" src="images/pay/visa.png" alt="мы принимаем visa">
+            <img class="footer-bottom__img" src="images/pay/paypal.png" alt="мы принимаем paypal">
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

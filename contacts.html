@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CosMix - Магазин косметики</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo header__logo" href="index.html">
+          <img class="logo__img" src="images/logo.svg" alt="logo">
+        </a>
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="shop.html">Каталог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="blog.html">Блог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="about.html">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <button type="button" class="menu__btn"><span></span></button>
+        </nav>
+
+        <div class="user-nav header__nav">
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__icon">
+              <use xlink:href="images/sprite.svg#heart"></use>
+            </svg>
+            <span class="user-nav__num">4</span>
+          </a>
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__icon">
+              <use xlink:href="images/sprite.svg#cart"></use>
+            </svg>
+            <span class="user-nav__num">1</span>
+          </a>
+          <a class="user-nav__link" href="login.html">
+            <svg class="user-nav__icon">
+              <use xlink:href="images/sprite.svg#user"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="contact-page">
+      <div class="container">
+
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-page__map">
+          <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab833b07d0ac2a09a07c4139debf2dec5bbf79d8bb341faa1834ed41710d0b548&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+
+        <section class="contact">
+          <div class="contact__inner">
+            <div class="contact__info">
+              <h3 class="contact__title">
+                Обратная связь
+              </h3>
+              <p class="contact__text">
+                Здесь Вы можете отправить личное сообщение в адрес редакции сайта. Мы внимательно ознакомимся со всеми
+                Вашими пожеланиями и предложениями.
+              </p>
+            </div>
+
+            <form class="comment-form contact__form" action="#">
+              <span class="comment-form__title">Форма обратной связи</span>
+
+              <div class="comment-form__inputs">
+                <input class="comment-form__input" type="text" placeholder="Имя">
+                <input class="comment-form__input" type="text" placeholder="Email">
+              </div>
+              <textarea class="comment-form__textarea" placeholder="Ваше сообщение"></textarea>
+
+              <button class="comment-form__btn" type="submit">Отправить</button>
+            </form>
+          </div>
+
+          <address class="contact__address">
+            <div class="contact__item">
+              <span class="contact__descr">Заходите к нам по адресу</span>
+              <span class="contact__link">Москва, Серебрянический пер., 9</span>
+            </div>
+
+            <div class="contact__item">
+              <span class="contact__descr">Пишите на наш электронный адрес</span>
+              <a class="contact__link" href="mailto:Youremail@gmail.com">
+                mail@cosmix.ru
+              </a>
+            </div>
+
+            <div class="contact__item">
+              <span class="contact__descr">Уточняйте вопросы по телефону</span>
+              <a class="contact__link" href="tel:74991130422">
+                +74991130422
+              </a>
+            </div>
+
+            <div class="contact__item">
+              <span class="contact__descr">Ищите нас в социальных сетях</span>
+              <ul class="contact__networks networks">
+                <li class="networks__item">
+                  <a class="networks__link" href="#">
+                    <svg class="networks__icon">
+                      <use xlink:href="images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+  
+                <li class="networks__item">
+                  <a class="networks__link" href="#">
+                    <svg class="networks__icon">
+                      <use xlink:href="images/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+  
+                <li class="networks__item">
+                  <a class="networks__link" href="#">
+                    <svg class="networks__icon">
+                      <use xlink:href="images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>            
+          </address>
+        </section>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <address class="footer-top__column footer-top__column--main">
+          <a class="logo footer-top__logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+          <span class="footer-top__link">Москва, Серебрянический пер., 9</span>
+          <a class="footer-top__link" href="mailto:Youremail@gmail.com">
+            mail@cosmix.ru
+          </a>
+          <a class="footer-top__link" href="tel:74991130422">
+            +74991130422
+          </a>
+
+          <ul class="footer-top__networks networks">
+            <li class="networks__item">
+              <a class="networks__link" href="#">
+                <svg class="networks__icon">
+                  <use xlink:href="images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="networks__item">
+              <a class="networks__link" href="#">
+                <svg class="networks__icon">
+                  <use xlink:href="images/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="networks__item">
+              <a class="networks__link" href="#">
+                <svg class="networks__icon">
+                  <use xlink:href="images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+
+        <div class="footer-top__column">
+          <h6 class="footer-top__title">Покупателю</h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">О магазине</a>
+              <a class="footer-top__link" href="#">Контакты</a>
+              <a class="footer-top__link" href="#">Оплата</a>
+              <a class="footer-top__link" href="#">Доставка</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__column">
+          <h6 class="footer-top__title">Аккаунт</h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Мой аккаунт</a>
+              <a class="footer-top__link" href="#">Моя корзина</a>
+              <a class="footer-top__link" href="#">Избранное</a>
+              <a class="footer-top__link" href="#">Регистрация</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__column footer-top__column--sub">
+          <h6 class="footer-top__title">Подпишись на рассылку</h6>
+          <p class="footer-top__text">
+            Будь в курсе последних новинок и акций
+          </p>
+          <form class="footer-top__form" action="#">
+            <input class="footer-top__input" type="email" placeholder="Email" required>
+            <button class="footer-top__btn" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy">© 2021 cosmix.ru. Все права защищены.</p>
+        <div class="footer-bottom__accept">
+          Мы принимаем
+          <img class="footer-bottom__img" src="images/pay/mastercard.png" alt="мы принимаем mastercard">
+          <img class="footer-bottom__img" src="images/pay/visa.png" alt="мы принимаем visa">
+          <img class="footer-bottom__img" src="images/pay/paypal.png" alt="мы принимаем paypal">
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

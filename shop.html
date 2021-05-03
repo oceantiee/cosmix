@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COSMIX - Каталог</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo header__logo" href="index.html">
+          <img class="logo__img" src="images/logo.svg" alt="logo">
+        </a>
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="shop.html">Каталог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="blog.html">Блог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="about.html">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <button type="button" class="menu__btn"><span></span></button>
+        </nav>
+
+        <div class="user-nav header__nav">
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__icon">
+              <use xlink:href="images/sprite.svg#heart"></use>
+            </svg>
+            <span class="user-nav__num">4</span>
+          </a>
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__icon">
+              <use xlink:href="images/sprite.svg#cart"></use>
+            </svg>
+            <span class="user-nav__num">1</span>
+          </a>
+          <a class="user-nav__link" href="login.html">
+            <svg class="user-nav__icon">
+              <use xlink:href="images/sprite.svg#user"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="shop">
+      <div class="container">
+
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="shop.html">Каталог</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="shop__inner">
+          <button class="filter-hide" type="button">Фильтр</button>
+          <div class="shop__filters filter">
+            <div class="filter__item filter-search">
+              <h3 class="filter__title">Поиск</h3>
+              <form class="filter-search__form" action="#">
+                <input class="filter-search__input" type="text" placeholder="Найти">
+                <button class="filter-search__btn" type="submit">
+                  <svg class="filter-search__icon">
+                    <use xlink:href="images/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+
+            <div class="filter__item filter-checkbox">
+              <span class="filter__title">Категория</span>
+              <form class="filter-checkbox__form" action="#">
+                <label class="filter-checkbox__label">
+                  <input class="filter-checkbox__input" type="checkbox">
+                  <span class="filter-checkbox__text">Для лица (333)</span>
+                </label>
+
+                <label class="filter-checkbox__label">
+                  <input class="filter-checkbox__input" type="checkbox">
+                  <span class="filter-checkbox__text">Для тела (306)</span>
+                </label>
+
+                <label class="filter-checkbox__label">
+                  <input class="filter-checkbox__input" type="checkbox">
+                  <span class="filter-checkbox__text">Для волос (256)</span>
+                </label>
+
+                <label class="filter-checkbox__label">
+                  <input class="filter-checkbox__input" type="checkbox">
+                  <span class="filter-checkbox__text">Макияж (455)</span>
+                </label>
+
+                <label class="filter-checkbox__label">
+                  <input class="filter-checkbox__input" type="checkbox">
+                  <span class="filter-checkbox__text">Парфюмерия (172)</span>
+                </label>
+
+              </form>
+            </div>
+
+            <div class="filter__item filter-checkbox">
+              <span class="filter__title">Бренд</span>
+              <form class="filter-checkbox__form" action="#">
+                <label class="filter-checkbox__label">
+                  <input class="filter-checkbox__input" type="checkbox">
+                  <span class="filter-checkbox__text">Gucci (105)</span>
+                </label>
+
+                <label class="filter-checkbox__label">
+                  <input class="filter-checkbox__input" type="checkbox">
+                  <span class="filter-checkbox__text">Nars (66)</span>
+                </label>
+
+                <label class="filter-checkbox__label">
+                  <input class="filter-checkbox__input" type="checkbox">
+                  <span class="filter-checkbox__text">Tom Ford (94)</span>
+                </label>
+
+                <label class="filter-checkbox__label">
+                  <input class="filter-checkbox__input" type="checkbox">
+                  <span class="filter-checkbox__text">Buxom (156)</span>
+                </label>
+
+                <label class="filter-checkbox__label">
+                  <input class="filter-checkbox__input" type="checkbox">
+                  <span class="filter-checkbox__text">Max Factor (47)</span>
+                </label>
+
+              </form>
+            </div>
+
+            <div class="filter__item filter-price">
+              <span class="filter__title">Цена</span>
+              <form class="filter-price__form" action="#">
+                <input class="filter-price__input" type="text" data-min="0" data-max="10000" data-from="2000"
+                  data-to="7000">
+                <label class="filter-price__label">
+                  <span class="filter=price__info">
+                    <span class="filter-price__from"></span>₽ -
+                    <span class="filter-price__to"></span>₽
+                  </span>
+                </label>
+              </form>
+            </div>
+
+            <div class="filter__item filter-checkbox">
+              <span class="filter__title">Тип кожи</span>
+              <form class="filter-checkbox__form" action="#">
+                <label class="filter-checkbox__label">
+                  <input class="filter-checkbox__input" type="checkbox">
+                  <span class="filter-checkbox__text">Для всех типов кожи (77)</span>
+                </label>
+
+                <label class="filter-checkbox__label">
+                  <input class="filter-checkbox__input" type="checkbox">
+                  <span class="filter-checkbox__text">Для сухой кожи (64)</span>
+                </label>
+
+                <label class="filter-checkbox__label">
+                  <input class="filter-checkbox__input" type="checkbox">
+                  <span class="filter-checkbox__text">Для чувствительной кожи (36)</span>
+                </label>
+
+                <label class="filter-checkbox__label">
+                  <input class="filter-checkbox__input" type="checkbox">
+                  <span class="filter-checkbox__text">Для жирной кожи (42)</span>
+                </label>
+
+              </form>
+            </div>
+          </div>
+
+          <div class="shop-content">            
+
+            <div class="shop-content__filter">
+
+              <div class="shop-content__selects">
+                <form class="shop-content__form" action="#">
+                  <select class="shop-content__select select-style">
+                    <option value="">По популярности</option>
+                    <option value="">Цена по возрастанию</option>
+                    <option value="">Цена по убыванию</option>
+                    <option value="">По рейтингу</option>
+                  </select>
+                  <select class="shop-content__select select-style">
+                    <option value="">25 на странице</option>
+                    <option value="">50 на странице</option>
+                    <option value="">100 на странице</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+
+            <div class="shop-content__inner">
+
+              <div class="product-card">
+                <a class="product-card__link" href="product.html">
+                  <img class="product-card__images" src="images/products/1.jfif" alt="product">
+                </a>
+    
+                <div class="product-card__buttons">
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+    
+                <a class="product-card__title-link" href="product.html">
+                  <h3 class="product-card__title">Тени для век Dior 5 couleurs couture</h3>
+                </a>
+                <div class="product-card__star star" data-rateyo-rating="3.5"></div>
+                <div class="product-card__price">
+                  <span class="product-card__sum">3500 ₽</span>
+                </div>
+              </div>
+    
+              <div class="product-card product-card--sale">
+                <a class="product-card__link" href="product.html">
+                  <img class="product-card__images" src="images/products/2.webp" alt="product">
+                </a>
+    
+                <div class="product-card__buttons">
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+    
+                <a class="product-card__title-link" href="product.html">
+                  <h3 class="product-card__title">Маска-пленка с ягодными пудрами, 50 мл</h3>
+                </a>
+                <div class="product-card__star star" data-rateyo-rating="5"></div>
+                <div class="product-card__price">
+                  <span class="product-card__sum">995 ₽</span>
+                  <span class="product-card__sum product-card__sum--old">1000 ₽</span>
+                </div>
+              </div>
+    
+              <div class="product-card product-card--sale">
+                <a class="product-card__link" href="product.html">
+                  <img class="product-card__images" src="images/products/s1.webp" alt="product">
+                </a>
+    
+                <div class="product-card__buttons">
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+    
+                <a class="product-card__title-link" href="product.html">
+                  <h3 class="product-card__title">Гель для лица очищающий YUMMMY Профитроли с ванильным кремом</h3>
+                </a>
+                <div class="product-card__star star" data-rateyo-rating="5"></div>
+                <div class="product-card__price">
+                  <span class="product-card__sum">200 ₽</span>
+                  <span class="product-card__sum product-card__sum--old">250 ₽</span>
+                </div>
+              </div>
+    
+              <div class="product-card product-card--sale">
+                <a class="product-card__link" href="product.html">
+                  <img class="product-card__images" src="images/products/s2.webp" alt="product">
+                </a>
+    
+                <div class="product-card__buttons">
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+    
+                <a class="product-card__title-link" href="product.html">
+                  <h3 class="product-card__title">Матирующая компактная пудра CLARINS Ever Matte</h3>
+                </a>
+                <div class="product-card__star star" data-rateyo-rating="5"></div>
+                <div class="product-card__price">
+                  <span class="product-card__sum">2800 ₽</span>
+                  <span class="product-card__sum product-card__sum--old">3100 ₽</span>
+                </div>
+              </div>
+    
+              <div class="product-card">
+                <a class="product-card__link" href="product.html">
+                  <img class="product-card__images" src="images/products/3.webp" alt="product">
+                </a>
+    
+                <div class="product-card__buttons">
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+    
+                <a class="product-card__title-link" href="product.html">
+                  <h3 class="product-card__title">Жидкие румяна NARS</h3>
+                </a>
+                <div class="product-card__star star" data-rateyo-rating="4"></div>
+                <div class="product-card__price">
+                  <span class="product-card__sum">2399 ₽</span>
+                </div>
+              </div>
+    
+              <div class="product-card">
+                <a class="product-card__link" href="product.html">
+                  <img class="product-card__images" src="images/products/4.webp" alt="product">
+                </a>
+    
+                <div class="product-card__buttons">
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+    
+                <a class="product-card__title-link" href="product.html">
+                  <h3 class="product-card__title">Средство для дневного ухода за кожей PAYOT My Payot Jour</h3>
+                </a>
+                <div class="product-card__star star" data-rateyo-rating="4"></div>
+                <div class="product-card__price">
+                  <span class="product-card__sum">2150 ₽</span>
+                </div>
+              </div>
+    
+              <div class="product-card product-card--sale">
+                <a class="product-card__link" href="product.html">
+                  <img class="product-card__images" src="images/products/s3.webp" alt="product">
+                </a>
+    
+                <div class="product-card__buttons">
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+    
+                <a class="product-card__title-link" href="product.html">
+                  <h3 class="product-card__title">Жидкое мыло для нормальной/сухой кожи CLINIQUE Mild</h3>
+                </a>
+                <div class="product-card__star star" data-rateyo-rating="5"></div>
+                <div class="product-card__price">
+                  <span class="product-card__sum">1749 ₽</span>
+                  <span class="product-card__sum product-card__sum--old">2999 ₽</span>
+                </div>
+              </div>
+    
+              <div class="product-card product-card--sale">
+                <a class="product-card__link" href="product.html">
+                  <img class="product-card__images" src="images/products/s4.webp" alt="product">
+                </a>
+    
+                <div class="product-card__buttons">
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+    
+                <a class="product-card__title-link" href="product.html">
+                  <h3 class="product-card__title">Матовая помада SODA MATTE LIP LIQUID #matteaboutyou</h3>
+                </a>
+                <div class="product-card__star star" data-rateyo-rating="3"></div>
+                <div class="product-card__price">
+                  <span class="product-card__sum">160 ₽</span>
+                  <span class="product-card__sum product-card__sum--old">210 ₽</span>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <a class="product-card__link" href="product.html">
+                  <img class="product-card__images" src="images/products/5.webp" alt="product">
+                </a>
+    
+                <div class="product-card__buttons">
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+    
+                <a class="product-card__title-link" href="product.html">
+                  <h3 class="product-card__title">Спрей Увлажненные и послушные волосы TSUBAKI</h3>
+                </a>
+                <div class="product-card__star star" data-rateyo-rating="4"></div>
+                <div class="product-card__price">
+                  <span class="product-card__sum">1400 ₽</span>
+                </div>
+              </div>
+    
+              <div class="product-card">
+                <a class="product-card__link" href="product.html">
+                  <img class="product-card__images" src="images/products/6.webp" alt="product">
+                </a>
+    
+                <div class="product-card__buttons">
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+    
+                <a class="product-card__title-link" href="product.html">
+                  <h3 class="product-card__title">Пептидный крем против морщин для всех типов кожи лица, 50 мл</h3>
+                </a>
+                <div class="product-card__star star" data-rateyo-rating="3"></div>
+                <div class="product-card__price">
+                  <span class="product-card__sum">844 ₽</span>
+                </div>
+              </div>
+    
+              <div class="product-card product-card--sale">
+                <a class="product-card__link" href="product.html">
+                  <img class="product-card__images" src="images/products/s7.webp" alt="product">
+                </a>
+    
+                <div class="product-card__buttons">
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <button class="product-card__btn" type="button">
+                    <svg class="product-card__icon">
+                      <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+    
+                <a class="product-card__title-link" href="product.html">
+                  <h3 class="product-card__title">Помада для губ Full Force с эффектом объема BUXOM</h3>
+                </a>
+                <div class="product-card__star star" data-rateyo-rating="4"></div>
+                <div class="product-card__price">
+                  <span class="product-card__sum">1349 ₽</span>
+                  <span class="product-card__sum product-card__sum--old">1849 ₽</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="pagination">
+              <a class="pagination__prev pagination__arrows" href="#">Назад</a>
+
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__link--active" href="#">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">3</a>
+                </li>
+                <li class="pagination__item">
+                  <span class="pagination__link">...</span>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">10</a>
+                </li>
+              </ul>
+
+              <a class="pagination__next pagination__arrows" href="#">Далее</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <address class="footer-top__column footer-top__column--main">
+          <a class="logo footer-top__logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+          <span class="footer-top__link">Москва, Серебрянический пер., 9</span>
+          <a class="footer-top__link" href="mailto:Youremail@gmail.com">
+            mail@cosmix.ru
+          </a>
+          <a class="footer-top__link" href="tel:74991130422">
+            +74991130422
+          </a>
+
+          <ul class="footer-top__networks networks">
+            <li class="networks__item">
+              <a class="networks__link" href="#">
+                <svg class="networks__icon">
+                  <use xlink:href="images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="networks__item">
+              <a class="networks__link" href="#">
+                <svg class="networks__icon">
+                  <use xlink:href="images/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="networks__item">
+              <a class="networks__link" href="#">
+                <svg class="networks__icon">
+                  <use xlink:href="images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+
+        <div class="footer-top__column">
+          <h6 class="footer-top__title">Покупателю</h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">О магазине</a>
+              <a class="footer-top__link" href="#">Контакты</a>
+              <a class="footer-top__link" href="#">Оплата</a>
+              <a class="footer-top__link" href="#">Доставка</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__column">
+          <h6 class="footer-top__title">Аккаунт</h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Мой аккаунт</a>
+              <a class="footer-top__link" href="#">Моя корзина</a>
+              <a class="footer-top__link" href="#">Избранное</a>
+              <a class="footer-top__link" href="#">Регистрация</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__column footer-top__column--sub">
+          <h6 class="footer-top__title">Подпишись на рассылку</h6>
+          <p class="footer-top__text">
+            Будь в курсе последних новинок и акций
+          </p>
+          <form class="footer-top__form" action="#">
+            <input class="footer-top__input" type="email" placeholder="Email" required>
+            <button class="footer-top__btn" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy">© 2021 cosmix.ru. Все права защищены.</p>
+        <div class="footer-bottom__accept">
+          Мы принимаем
+          <img class="footer-bottom__img" src="images/pay/mastercard.png" alt="мы принимаем mastercard">
+          <img class="footer-bottom__img" src="images/pay/visa.png" alt="мы принимаем visa">
+          <img class="footer-bottom__img" src="images/pay/paypal.png" alt="мы принимаем paypal">
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
